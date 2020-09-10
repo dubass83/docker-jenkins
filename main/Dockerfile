@@ -3,7 +3,7 @@ LABEL maintainer="MaksSych@gmail.com"
 
 USER root
 RUN  mkdir -p /tmp/download && \ 
-        curl -L https://download.docker.com/mac/static/stable/x86_64/docker-19.03.2.tgz | tar -xz -C /tmp/download && \
+        curl -L https://download.docker.com/mac/static/stable/x86_64/docker-19.03.12.tgz | tar -xz -C /tmp/download && \
         rm -rf /tmp/download/docker/dockerd && \
         mv /tmp/download/docker/docker* /usr/local/bin/ && \
         rm -rf /tmp/download && \
